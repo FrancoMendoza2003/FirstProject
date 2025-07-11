@@ -1,12 +1,12 @@
-function App() {
-  return (
+import { MOCK_PROJECTS } from "./projects/MockProjects";
+
+function ProjectsPage() {
+  return(
     <>
-      <blockquote cite="Benjamin Franklin">
-        Tell me and I forget, teach me and I may remember, involve me and I
-        learn.
-      </blockquote>
+    <h1>Project Pilot</h1>
+    <pre>{JSON.stringify(MOCK_PROJECTS, null, ' ')}</pre>
     </>
   );
 }
 
-export default App;
+export default ProjectsPage;
